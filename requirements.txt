@@ -1,0 +1,21 @@
+# Version pinned to ensure data reproducibility.
+numpy == 1.25.0
+
+tqdm == 4.65.0
+
+matplotlib == 3.7.2
+
+py-ste == 1.0.1
+qugrad == 1.0.1
+qugradlab == 0.1.1
+
+qiskit-terra == 0.25.1
+qiskit-nature == 0.6.2
+pyscf == 2.3.0
+
+ray == 2.7.1
+cloudpickle == 3.1.1
+saveable-objects == 1.1.8
+thread-chunks == 1.0.5
+
+tensorflow == 2.11.1
