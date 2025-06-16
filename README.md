@@ -12,7 +12,7 @@ The required Python packages can be installed by executing
 ```bash
 pip install -r requirements.txt
 ```
-in the root directory of this repository. To ensure reproducibility all packages in ``requirements.txt`` are version pinned and Python ``3.10.16`` should be used.
+in the root directory of this repository. To ensure reproducibility, all packages in ``requirements.txt`` are version pinned, and Python ``3.10.16`` should be used.
 
 ## Downloading the data
 
@@ -31,13 +31,13 @@ bash scripts/download_data_from_zenodo.sh
 
 > **Warning:** We expect the data collection scripts to take several weeks to months to run on CPUs with approximately 64 cores.
 
-> **Warning:** The data collection scripts likely need more than 50 GB RAM (or SWAP) to store the intermediate data. The exact memory requirements have not been benchmarked. That said the data was collected on a device with 2 TB of RAM.
+> **Warning:** The data collection scripts likely need more than 50 GB of RAM (or SWAP) to store the intermediate data. The exact memory requirements have not been benchmarked. That said, the data was collected on a device with 2 TB of RAM.
 
 Alternatively, all of the data can be collected in series by executing
 ```bash
 python scripts/data_collection/collect_all_data.py
 ```
-in the root directory of this repository. Alternatively, if you only wish to collect the data for Figure ``X`` in our article then you can execute
+in the root directory of this repository. Alternatively, if you only wish to collect the data for Figure ``X`` in our article, then you can execute
 ```bash
 # Replace X with the figure number
 python scripts/data_collection/figure_X.py 
@@ -59,11 +59,11 @@ in the root directory of this repository.
 
 ## Supporting Libraries and Packages
 
-For this project the following libraries and packages were developed:
+For this project, the following libraries and packages were developed:
 
 ### [Suzuki-Trotter-Evolver](https://github.com/Christopher-K-Long/Suzuki-Trotter-Evolver)
 
-A high performance C++ header-only library for evolving states under the Schrödinger equation using first-order Suzuki-Trotter and computing switching functions. Performance benchmarks with a Python wrapper can be found here: https://PySTE.readthedocs.io/en/latest/benchmarks/index.html.
+A high-performance C++ header-only library for evolving states under the Schrödinger equation using first-order Suzuki-Trotter and computing switching functions. Performance benchmarks with a Python wrapper can be found here: https://PySTE.readthedocs.io/en/latest/benchmarks/index.html.
 
 **Source code repository:** [https://github.com/Christopher-K-Long/Suzuki-Trotter-Evolver](https://github.com/Christopher-K-Long/Suzuki-Trotter-Evolver)
 
